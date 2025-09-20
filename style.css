@@ -1,0 +1,10 @@
+function sendMoney() {
+  let amount = document.getElementById("amount").value;
+  let recipient = document.getElementById("recipient").value;
+  let log = document.getElementById("log");
+
+  if(amount && recipient) {
+    log.innerHTML = "✅ تم إرسال " + amount + " إلى " + recipient;
+  } else {
+    log.innerHTML = "⚠️ الرجاء إدخال المبلغ واسم المستلم";
+  }
