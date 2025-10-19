@@ -21,3 +21,10 @@ Bdoor Project
   <button>زر تجريبي</button>
 </body>
 </html
+script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js')
+      .then(() => console.log('✅ تم تفعيل خدمة محفظة بدور'))
+      .catch(err => console.error('❌ خطأ في التسجيل:', err));
+  }
+</script>
